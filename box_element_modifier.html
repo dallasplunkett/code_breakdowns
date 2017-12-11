@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BEM</title>
+    <style>
+    /* block__element--modifier */
+    .inline-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .inline-list__item {
+      display: inline-block;
+      margin: 30px;
+    }
+    .inline-list__item--last {
+      margin-right: 0;
+    }
+    </style>
+  </head>
+  <body>
+    <ul class="inline-list"> <!--BLOCK-->
+      <li class="inline-list__item">
+        text <!--ELEMENT-->
+      </li>
+      <li class="inline-list__item">
+        text <!--ELEMENT-->
+      </li>
+      <li class="inline-list__item inline-list__item--last">
+        text <!--ELEMENT MODIFIER-->
+      </li>
+    </ul>
+  </body>
+</html>
